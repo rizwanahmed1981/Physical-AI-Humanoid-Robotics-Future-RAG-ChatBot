@@ -1,0 +1,18 @@
+{
+  "id": "quizzes/chapter4-section6",
+  "title": "Chapter 4 Section 6 Quiz - From Perception to Action",
+  "description": "<MCQQuiz",
+  "source": "@site/docs/quizzes/chapter4-section6.md",
+  "sourceDirName": "quizzes",
+  "slug": "/quizzes/chapter4-section6",
+  "permalink": "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter4-section6",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/rizwanahmed1981/Physical-AI-Humanoid-Robotics-Future/edit/main/docs/quizzes/chapter4-section6.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Chapter 4 Section 6 Quiz - From Perception to Action",
+    "sidebar_label": "Chapter 4 Section 6 Quiz"
+  }
+}

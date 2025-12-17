@@ -1,0 +1,206 @@
+{
+  "/Physical-AI-Humanoid-Robotics-Future/docs-5e7": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "6247a0bb"
+    }
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs-b7a": {
+    "__comp": "a7bd4aaa",
+    "version": "935f2afb"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs-855": {
+    "__comp": "a94703ab"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/chapters/chapter1-93c": {
+    "__comp": "17896441",
+    "content": "cc0c3b80"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/chapters/chapter2-bc5": {
+    "__comp": "17896441",
+    "content": "9f15a361"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/chapters/chapter3-628": {
+    "__comp": "17896441",
+    "content": "99840062"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/chapters/chapter4-a32": {
+    "__comp": "17896441",
+    "content": "36404175"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/chapters/chapter5-8b6": {
+    "__comp": "17896441",
+    "content": "ae4b018b"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/chapters/chapter5-summary-475": {
+    "__comp": "17896441",
+    "content": "e1edbd48"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/chapters/chapter6-2f7": {
+    "__comp": "17896441",
+    "content": "de460030"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/chapters/template-c3a": {
+    "__comp": "17896441",
+    "content": "eec94de5"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter1-section1-b07": {
+    "__comp": "17896441",
+    "content": "729f6499"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter1-section2-8b9": {
+    "__comp": "17896441",
+    "content": "25e6d8fd"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter1-section3-437": {
+    "__comp": "17896441",
+    "content": "c2089f2c"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter1-section4-7a5": {
+    "__comp": "17896441",
+    "content": "d88ba316"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter1-section5-5e9": {
+    "__comp": "17896441",
+    "content": "32d04ea7"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter1-sections-3eb": {
+    "__comp": "17896441",
+    "content": "fd4ca57e"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter2-section1-82c": {
+    "__comp": "17896441",
+    "content": "beba9a9e"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter2-section2-a69": {
+    "__comp": "17896441",
+    "content": "3fc58dc1"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter2-section3-f7f": {
+    "__comp": "17896441",
+    "content": "f59535f9"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter2-section4-3d7": {
+    "__comp": "17896441",
+    "content": "4d0279f5"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter2-section5-3a8": {
+    "__comp": "17896441",
+    "content": "27d3b467"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter2-sections-440": {
+    "__comp": "17896441",
+    "content": "1035d96f"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter3-section1-07e": {
+    "__comp": "17896441",
+    "content": "b69028ac"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter3-section2-23c": {
+    "__comp": "17896441",
+    "content": "501ce02b"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter3-section3-ea3": {
+    "__comp": "17896441",
+    "content": "b2cfe853"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter3-section4-1eb": {
+    "__comp": "17896441",
+    "content": "a111c53e"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter3-section5-b00": {
+    "__comp": "17896441",
+    "content": "cc864c52"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter3-section6-788": {
+    "__comp": "17896441",
+    "content": "c5ece206"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter3-sections-bd3": {
+    "__comp": "17896441",
+    "content": "32be714b"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter4-section1-cbf": {
+    "__comp": "17896441",
+    "content": "9b534ac3"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter4-section2-6a6": {
+    "__comp": "17896441",
+    "content": "4a558f05"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter4-section3-c73": {
+    "__comp": "17896441",
+    "content": "a32556ac"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter4-section4-5db": {
+    "__comp": "17896441",
+    "content": "90c2a252"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter4-section5-f1e": {
+    "__comp": "17896441",
+    "content": "89ebfabc"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter4-section6-f82": {
+    "__comp": "17896441",
+    "content": "2fb4e8e0"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter4-sections-f84": {
+    "__comp": "17896441",
+    "content": "49fda67a"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter5-section1-b8f": {
+    "__comp": "17896441",
+    "content": "338ab014"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter5-section2-2d3": {
+    "__comp": "17896441",
+    "content": "bb50c314"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter5-section3-3e3": {
+    "__comp": "17896441",
+    "content": "c2d8c630"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter5-section4-94e": {
+    "__comp": "17896441",
+    "content": "7f84424f"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter5-section5-9b9": {
+    "__comp": "17896441",
+    "content": "48c79f96"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter5-section6-490": {
+    "__comp": "17896441",
+    "content": "c6d46e1a"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter6-section1-e0d": {
+    "__comp": "17896441",
+    "content": "ed607fea"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter6-section2-8c2": {
+    "__comp": "17896441",
+    "content": "67db29e9"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter6-section3-0ba": {
+    "__comp": "17896441",
+    "content": "3121a7e4"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter6-section4-73a": {
+    "__comp": "17896441",
+    "content": "5a6b43cd"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter6-section5-4ce": {
+    "__comp": "17896441",
+    "content": "9b36cad4"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter6-sections-aa5": {
+    "__comp": "17896441",
+    "content": "f958d762"
+  },
+  "/Physical-AI-Humanoid-Robotics-Future/-cdc": {
+    "__comp": "9dd8a0d2",
+    "__context": {
+      "plugin": "d5e079b6"
+    },
+    "config": "5e9f5e1a"
+  }
+}

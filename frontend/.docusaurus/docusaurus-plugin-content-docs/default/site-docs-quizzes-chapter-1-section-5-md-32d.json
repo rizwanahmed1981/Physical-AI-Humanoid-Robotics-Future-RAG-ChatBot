@@ -1,0 +1,17 @@
+{
+  "id": "quizzes/chapter1-section5",
+  "title": "Chapter 1 Section 5 Quiz",
+  "description": "<MCQQuiz",
+  "source": "@site/docs/quizzes/chapter1-section5.md",
+  "sourceDirName": "quizzes",
+  "slug": "/quizzes/chapter1-section5",
+  "permalink": "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter1-section5",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/rizwanahmed1981/Physical-AI-Humanoid-Robotics-Future/edit/main/docs/quizzes/chapter1-section5.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Chapter 1 Section 5 Quiz"
+  }
+}
