@@ -36,7 +36,11 @@ def setup_environment():
 
     # Set defaults for optional variables
     if not os.getenv('QDRANT_HOST'):
-        os.environ['QDRANT_HOST'] = 'localhost'
+        cluster_id = os.getenv('QDRANT_CLUSTER_ID')
+        if cluster_id:
+            os.environ['QDRANT_HOST'] = f"https://{cluster_id}.us-east4-0.gcp.cloud.qdrant.io"
+        else:
+            os.environ['QDRANT_HOST'] = 'localhost'
 
     if not os.getenv('QDRANT_PORT'):
         os.environ['QDRANT_PORT'] = '6333'

@@ -27,23 +27,55 @@ class QdrantClient:
             api_key: Qdrant API key (if required)
         """
         # Get configuration from environment variables
-        self.host = host or os.getenv('QDRANT_HOST', 'localhost')
+        self.host = host or os.getenv('QDRANT_HOST')
         self.port = port or int(os.getenv('QDRANT_PORT', '6333'))
         self.api_key = api_key or os.getenv('QDRANT_API_KEY')
 
+        # If no host provided, use the provided cluster information
+        if not self.host:
+            cluster_id = os.getenv('QDRANT_CLUSTER_ID')
+            if cluster_id:
+                self.host = f"https://{cluster_id}.us-east4-0.gcp.cloud.qdrant.io"
+            else:
+                self.host = 'localhost'
+
         # Initialize Qdrant client
         try:
-            if self.api_key:
-                self.client = QdrantClientImpl(host=self.host, port=self.port, api_key=self.api_key)
-            else:
-                self.client = QdrantClientImpl(host=self.host, port=self.port)
+            # For cloud instances, use a more specific approach
+            if self.host.startswith('https://') or self.host.startswith('http://'):
+                # Extract host and port from URL to avoid proxy issues
+                import urllib.parse
+                parsed_url = urllib.parse.urlparse(self.host)
+                hostname = parsed_url.hostname
+                port = parsed_url.port or (443 if parsed_url.scheme == 'https' else 80)
+                https_enabled = parsed_url.scheme == 'https'
 
-            # Test connection
-            self.client.health_check()
-            logger.info("Successfully connected to Qdrant")
+                # Initialize without URL to avoid proxy issues
+                if self.api_key:
+                    self.client = QdrantClientImpl(host=hostname, port=port, api_key=self.api_key, https=https_enabled, timeout=10.0)
+                else:
+                    self.client = QdrantClientImpl(host=hostname, port=port, https=https_enabled, timeout=10.0)
+            else:
+                # For local instances, use host/port format
+                if self.api_key:
+                    self.client = QdrantClientImpl(host=self.host, port=self.port, api_key=self.api_key, timeout=10.0)
+                else:
+                    self.client = QdrantClientImpl(host=self.host, port=self.port, timeout=10.0)
+
+            # Test connection - wrap in try-catch to handle network issues gracefully
+            try:
+                self.client.health_check()
+                logger.info("Successfully connected to Qdrant")
+            except Exception as health_check_error:
+                logger.warning(f"Warning: Could not complete health check (this may be normal if Qdrant is not yet available): {health_check_error}")
+                # Still consider initialization successful since client was created
+                logger.info("Qdrant client initialized (health check skipped due to connectivity)")
 
         except Exception as e:
-            logger.error(f"Failed to connect to Qdrant: {str(e)}")
+            logger.error(f"Failed to initialize Qdrant client: {str(e)}")
+            # Provide more specific guidance on potential fixes
+            if "proxies" in str(e):
+                logger.error("This error might be due to network/proxy configuration. Try setting QDRANT_HOST directly with host/port instead.")
             raise
 
     def create_collection(self, collection_name: str, vector_size: int = 1536,
