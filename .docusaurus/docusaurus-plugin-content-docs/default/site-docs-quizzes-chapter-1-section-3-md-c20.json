@@ -1,0 +1,17 @@
+{
+  "id": "quizzes/chapter1-section3",
+  "title": "Chapter 1 Section 3 Quiz",
+  "description": "<MCQQuiz",
+  "source": "@site/docs/quizzes/chapter1-section3.md",
+  "sourceDirName": "quizzes",
+  "slug": "/quizzes/chapter1-section3",
+  "permalink": "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter1-section3",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/rizwanahmed1981/Physical-AI-Humanoid-Robotics-Future/edit/main/docs/quizzes/chapter1-section3.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Chapter 1 Section 3 Quiz"
+  }
+}
