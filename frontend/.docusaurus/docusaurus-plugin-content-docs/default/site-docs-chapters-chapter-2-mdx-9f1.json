@@ -1,0 +1,27 @@
+{
+  "id": "chapters/chapter2",
+  "title": "Chapter 2 - The Robotic Nervous System (ROS 2)",
+  "description": "In Chapter 1, we explored the fundamental concepts of Physical AI and embodied intelligence. Now we dive into the practical infrastructure that enables these concepts to come to life: the Robot Operating System 2, or ROS 2. Just as our biological nervous system coordinates our body's responses, ROS 2 serves as the nervous system for modern robots, orchestrating communication between sensors, actuators, and control systems.",
+  "source": "@site/docs/chapters/chapter2.mdx",
+  "sourceDirName": "chapters",
+  "slug": "/chapters/chapter2",
+  "permalink": "/Physical-AI-Humanoid-Robotics-Future/docs/chapters/chapter2",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/rizwanahmed1981/Physical-AI-Humanoid-Robotics-Future/edit/main/docs/chapters/chapter2.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Chapter 2 - The Robotic Nervous System (ROS 2)",
+    "sidebar_label": "Chapter 2 - The Robotic Nervous System (ROS 2)"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 1 - Foundations of Physical AI",
+    "permalink": "/Physical-AI-Humanoid-Robotics-Future/docs/chapters/chapter1"
+  },
+  "next": {
+    "title": "Chapter 3 - Digital Twins and Simulation",
+    "permalink": "/Physical-AI-Humanoid-Robotics-Future/docs/chapters/chapter3"
+  }
+}

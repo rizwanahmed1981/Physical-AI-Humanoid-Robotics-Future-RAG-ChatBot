@@ -1,0 +1,18 @@
+{
+  "id": "quizzes/chapter2-section3",
+  "title": "Chapter 2 Section 3 Quiz - Understanding Nodes, Topics, Services, and Actions",
+  "description": "<MCQQuiz",
+  "source": "@site/docs/quizzes/chapter2-section3.md",
+  "sourceDirName": "quizzes",
+  "slug": "/quizzes/chapter2-section3",
+  "permalink": "/Physical-AI-Humanoid-Robotics-Future/docs/quizzes/chapter2-section3",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/rizwanahmed1981/Physical-AI-Humanoid-Robotics-Future/edit/main/docs/quizzes/chapter2-section3.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Chapter 2 Section 3 Quiz - Understanding Nodes, Topics, Services, and Actions",
+    "sidebar_label": "Chapter 2 Section 3 Quiz"
+  }
+}
