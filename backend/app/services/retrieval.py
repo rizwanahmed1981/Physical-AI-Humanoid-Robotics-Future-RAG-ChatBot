@@ -1,56 +1,42 @@
 from typing import List, Dict, Any
-from pydantic import BaseModel
+from qdrant_client import QdrantClient
+from openai import OpenAI
+import os
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 class RetrievalService:
-    """
-    Service for retrieving relevant content from the textbook using embeddings
-    """
-
     def __init__(self):
-        self.vector_store = None
-        self.embedding_service = None
+        self.qdrant = QdrantClient(
+            url=os.getenv("QDRANT_URL"),
+            api_key=os.getenv("QDRANT_API_KEY")
+        )
+        self.collection_name = "physical_ai_book"
 
-    async def retrieve_relevant_content(self, query: str, top_k: int = 5) -> List[Dict[str, Any]]:
-        """
-        Retrieve the most relevant content chunks based on the query
-        """
-        # Placeholder implementation
-        return [
-            {
-                "content": f"Placeholder content chunk related to '{query}'",
-                "source": f"chapter_{i}.md",
-                "similarity_score": 0.8,
-                "metadata": {"section": f"section_{i}"}
-            }
-            for i in range(top_k)
-        ]
+    def embed_query(self, query: str) -> List[float]:
+        response = client.embeddings.create(
+            model="text-embedding-3-large",
+            input=query
+        )
+        return response.data[0].embedding
 
-    async def retrieve_by_topic(self, topic: str, max_chunks: int = 10) -> List[Dict[str, Any]]:
-        """
-        Retrieve content chunks related to a specific topic
-        """
-        # Placeholder implementation
-        return [
-            {
-                "content": f"Placeholder content about {topic}",
-                "source": f"topic_{topic}.md",
-                "metadata": {"topic": topic, "relevance": 0.9}
-            }
-            for _ in range(max_chunks)
-        ]
+    def retrieve(self, query: str, top_k: int = 5) -> List[Dict[str, Any]]:
+        query_vector = self.embed_query(query)
 
-    async def build_index(self, content_chunks: List[Dict[str, Any]]):
-        """
-        Build vector index from content chunks for efficient retrieval
-        """
-        # Placeholder implementation
-        pass
+        hits = self.qdrant.search(
+            collection_name=self.collection_name,
+            query_vector=query_vector,
+            limit=top_k
+        )
 
-class RetrievalRequest(BaseModel):
-    query: str
-    top_k: int = 5
+        results = []
+        for hit in hits:
+            results.append({
+                "content": hit.payload["text"],
+                "source": hit.payload.get("source"),
+                "chapter": hit.payload.get("chapter"),
+                "section": hit.payload.get("section"),
+                "score": hit.score
+            })
 
-class RetrievalResponse(BaseModel):
-    results: List[Dict[str, Any]]
-    query: str
-    retrieved_count: int
+        return results

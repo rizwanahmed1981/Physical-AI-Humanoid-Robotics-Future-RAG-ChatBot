@@ -1,17 +1,22 @@
-from fastapi import FastAPI
-from app.api.chat import router as chat_router
-from app.api.health import router as health_router
+from fastapi import APIRouter
+from app.retrieval.retrieval import RetrievalService
+from app.api.retrieve import router as retrieve_router
 
-app = FastAPI(
-    title="Physical-AI-Humanoid-Robotics RAG API",
-    description="Retrieval-Augmented Generation API for textbook content",
-    version="1.0.0"
+
+router = APIRouter()
+retriever = RetrievalService()
+
+app.include_router(
+    retrieve_router,
+    prefix="/api/v1",
+    tags=["retrieval"]
 )
 
-# Include API routers
-app.include_router(chat_router, prefix="/api/v1", tags=["chat"])
-app.include_router(health_router, prefix="/api/v1", tags=["health"])
-
-@app.get("/")
-def read_root():
-    return {"message": "Physical-AI-Humanoid-Robotics RAG API"}
+@router.post("/retrieve")
+def retrieve(query: str, top_k: int = 5):
+    results = retriever.retrieve(query, top_k)
+    return {
+        "query": query,
+        "retrieved_count": len(results),
+        "results": results
+    }
